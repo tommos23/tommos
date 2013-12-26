@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--Using strict doctype for clean markup " free of presentational clutter" http://www.w3schools.com/Xhtml/xhtml_dtd.asp -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Com1001</title>
+<!--Gives information on the character encoding-->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<!--Gives information on the website mainly used for web crawlers and gives more information on me-->
+<meta name="description" content="A website about me, from personal profile, course information to how i made the website"/>
+<meta name="keywords" content="Aaron, Thompson, Aaron Thopmpson, Personal profile, About my course, How i made the website"/>
+<meta name="author" content="Aaron Thompson"/>
+<!--Links to the style sheets, they can be changed by using the browser settings-->
+<link title="Custom: Default" href="com1004.css" rel="stylesheet" type="text/css" />
+<link title="Custom: Other" href="other.css" rel="alternate stylesheet" type="text/css" />
+<!--This adds a favourite icon to the website so if the user adds the website to bookmars the icon will appear-->
+<link  href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+
+<body>
+ 
+ <!--Div for the wrapper in this section of the website is purple-->
+ <div id="wrapper" class="silverPage">    
+ 
+ 	<!--Div for the heading-->
+    <div id="heading">
+    <!--This adds the banner to the top of the page the height and width have been set so the browser does not stretch the image-->
+    <img title="Com1001" src="images/com1001.png" height="170" width="870" alt="Com1001"/>
+	</div>	
+    	<!--The div for the menu system -->
+		<div id="menuContainer">
+         <!--Starts a unordered line which will have style sheet applied to it-->
+		 <ul class="menuList" >
+         		<!--The different classes are used on style sheet 2 to change the colour of the backgtround-->
+            	<li class="purple"><a title="home Page" href="index.html" accesskey="1">Home Page</a></li>
+				<li class="red"><a title="About Me" href="about me.html" accesskey="2">About Me</a></li>
+				<li class="silver"><a  class="current" title="About My Course" href="about my course.html" accesskey="3"> About My Course </a>                    
+                <!--Adds the sub-pages to the menu-->
+                    <ul class="indentUl"><li><a title="Com1001" href="com1001.html" accesskey="31">Com1001</a></li>
+                    <li><a title="Com1002" href="com1002.html" accesskey="32">Com1002</a></li>
+                    <li><a title="Com1003" href="com1003.html" accesskey="33">Com1003</a></li>
+                    <li><a title="Com1004" href="com1004.html" accesskey="34">Com1004</a></li>
+                    <li><a title="Com1005" href="com1005.html" accesskey="35">Com1005</a></li>
+                    <li><a title="Phi126" href="phi126.html" accesskey="36">Phi126</a></li>
+                </ul>
+   	            </li>
+                 
+				<li class="lightpurple"><a title="How I Made The Website" href="how i made the website.html" accesskey="4">How I Made The Website</a>                    
+                	<!--Adds the sub-pages to the menu-->
+                    <ul class="indentUl">
+                    <li><a title="Design of website" href="design.html" accesskey="41">Design of website</a></li>
+                    <li><a title="Implementation" href="implementation.html" accesskey="42">Implementation</a></li>
+                    <li><a title="Testing" href="testing.html" accesskey="43">Testing</a></li>   </ul></li>						 		 
+          </ul>	</div>
+    <!--This is hidden in the second style sheet, this adds the sub-pages to the first style as they are hidden otherwise-->
+    <div id="listsHidden">
+                    <ul class="menuList">                    
+                    <li><a class="current"  title="Com1001" href="com1001.html" accesskey="31">Com1001</a></li>
+                    <li><a title="Com1002" href="com1002.html" accesskey="32">Com1002</a></li>
+                    <li><a title="Com1003" href="com1003.html" accesskey="33">Com1003</a></li>
+                    <li><a title="Com1004" href="com1004.html" accesskey="34">Com1004</a></li>
+                    <li><a title="Com1005" href="com1005.html" accesskey="35">Com1005</a></li>
+                    <li><a title="Phi126" href="phi126.html" accesskey="36">Phi126</a></li>     
+                    </ul>                </div>
+    
+    <!--Adds the breadcrumbs to the pages for better navigation-->
+    <div id="breadCrumbs">
+	<a href="http://tommos.co.uk/">Site Home</a> > <a href="index.html">Home Page >  </a> > <a href="about my course.html">About My Course</a> > <a href="com1001.html">Com1001:</a>    </div>
+
+	<!--Adds a section for the content to be displayed-->
+	<div id="content">
+
+    <b>Software Engineering Crossover Project</b><br /><br />
+"This module introduces the Software Engineering concepts that are needed to develop software systems that can meet basic functional requirements within a well-defined problem domain. It covers the main steps in the process of developing such systems: requirements analysis, system specification, system design, system implementation and system testing. The module takes a model-based approach, in that at each stage it explains the various models of the software that need to be created, the notations to be used for the models (and particularly selected parts of the Unified Modelling Language, or UML), and the basic tools and techniques for producing these models. A major part of the module involves students working on a team project (the crossover project) to develop examples of the software systems being discussed, so giving practical experience in teamwork and in managing such projects." <a href="http://www.shef.ac.uk/prospectus/courseDetails.do?id=3906252011"> From the Software Engineering Crossover Project Website</a><br /><br />
+In this project I have developed a simple program in a team that accepts input from the user and performs calculations on them then prints the result.
+<img class="com100-Pic" title="Com1001 Code" src="images/com1001code.png" height="590" width="432" alt="Com1001 Code"/><br /><br />
+This is the code used for one of the applications it was written in java using a text editor. The documentation for the design and testing was written in Microsoft word. The design was done by the whole team using pseudo code and the testing was done by inputting sets of values to check that the program worked correctly for all of the constraints.<br /><br /><br /><b>This is what the program looks like when it runs</b><br /><img title="Input / output" src="images/com1001output.png" height="145" width="365" alt="Input / Output"/><br /> The user enters a value between 1 and 9999 and then the program calculates which digit in the number has the highest value.<br /><br /><br />
+For more information on the course please visit <a href="http://www.shef.ac.uk/prospectus/courseDetails.do?id=3906252011">the course webpage</a> or <a href="https://staffwww.dcs.shef.ac.uk/people/M.Gheorghe/campus_only/com1001/com1001.htm">the lectures website</a><br /><br />
+<p class="clear">
+<b>CrossOver project and assessment</b><br />
+The course marks are broken down into the following categories:
+</p>
+<ul>
+<li>Assignment 1 (simple programming group task) 10%</li>
+<li>Assignment 2 (requirements document) 20%</li>
+<li>Assignment 3 (design document) 20%</li>
+<li>Assignment 4 (implementation and unit testing) 30%</li>
+<li>Assignment 5 (presentation + system/acceptance testing) 10+10%</li>
+</ul>
+Processes involved in these activities (minutes, agendas, interactions) meant to be 10-20% of each of the above marks	</div>
+
+	<!--Adds information on me and the W3 valid images-->
+	<div id="footer">
+	<p>Created by Aaron Thompson 2010<br />
+	<a href="http://jigsaw.w3.org/css-validator/">
+    	<img class="w3Valid"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!"/>
+	</a>
+    <a href="http://validator.w3.org/">
+    	<img class="w3Valid"
+        src="http://www.w3.org/Icons/valid-xhtml10-blue"
+        alt="Valid XHTML 1.0 Strict"/>
+	</a>
+	<a href="http://colorfilter.wickline.org/colorblind/filter/button">
+    <img class="w3Valid" alt="See your web site through colorblind eyes with the colorblind web page filter." 
+    src="http://colorfilter.wickline.org/colorfilter_button.gif" /></a>
+    <br />
+	<a class="Accessible" title="Accessibility" href="accessibility.html" accesskey="0">Accessibility</a>
+	</p>
+	</div>
+
+</div>
+</body>
+
+</html>

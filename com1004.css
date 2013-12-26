@@ -1,0 +1,267 @@
+
+body
+{
+	/*Changes the background to the gradient image and fills it horizontally*/
+    background-image:url("images/Background.png");
+    background-repeat: repeat-x; 
+    background-attachment:fixed;
+}
+
+#wrapper
+{
+	/*Sets the background colour to white*/
+	background-color: #FFF;
+	
+	/*Sets a fixed width wrapper so it cannot be compressed as not to mess up the allignments*/
+    width:970px;
+	
+	/*Sets the padding so all of the other div's inside of the wrapper are seperated by a 10px border*/
+    padding:10px;
+	
+	/*Sets the border to a solid gray colour*/
+    border:5px solid #999;
+	/*Sets the margin on the outside of the wrapper to 0px and auto so it stays in the centre even if the 
+	wiidow is resized untill it reaches 970px across*/
+    margin:0px auto;
+    margin-top:20px; 
+	
+	/*This alligns all of the text in the page to be centered unless otherwise defined*/
+	text-align: center;
+}
+
+#heading
+{
+	/*Sets a fixed width and height for the banner so it cannot change depending on the content in it*/
+    width:870px;
+	height:170px;
+	
+	/*Adds a margin around the banner so it looks modulated*/
+    border:5px solid #999;
+	margin:0% 5% 2% 5%;
+	padding-bottom:0px;
+}
+
+	/* MENU STYLES for both menu Container and lits Hidden*/
+	#menuContainer, #listsHidden2, #listsHidden
+	{
+		/*Sets a fixed width and height for the banner so it cannot change depending on the content in it*/
+		width:870px;
+		height:28px;
+		
+		/*Takes away all padding so no white space is left in the box*/
+		padding:0;
+		margin:2% 5% 0px 5%;
+		border:5px solid #999;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:16px;
+		background:#666;
+		
+		/*If the box is box is filled like it is with the about my course and the How I Made The Website pages
+		the contents is hidden this stops the other indented un-ordered lines from appearing which would make them 
+		appearing in a way that would be unhelpfull for the user. This also allows the other style sheet to function 
+		correctly as the menu in the other style sheet is vertical*/
+		overflow: hidden;
+	}
+	
+	/*This is hidden in the other style sheet*/
+	#listsHidden
+	{
+		border:5px solid #CCC;
+		font-size:16px;
+		height:28px;
+		margin-top:0px;
+		overflow:visible;
+	}
+	
+	#listsHidden a, 
+	#listsHidden li
+	{
+		width:144px;
+	}
+	
+	#listsHidden2
+	{
+		border:5px solid #CCC;
+		font-size:16px;
+		height:26px;
+		margin-top:0px;
+		overflow:visible;
+		height:28px;
+	}
+	#listsHidden2 a, 
+	#listsHidden2 li
+	{
+		width:289px;
+	}
+	
+	
+	.menuList 
+	{
+		/*This stops the points showing in the list*/
+		list-style-type: none;
+		
+		/*This makes the list appear horizontally*/
+		display: inline;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	.menuList li 
+	{
+		width: 216px;
+		height: 28px;
+		float: left;
+		background:#666;
+		color:#eee;
+		
+		/* Shows thin grey line to seperate list items */
+		border-right:1px solid #CCC; 
+	}
+	
+	.menuList a 
+	{
+		/* This ensures that the whole element is clickable, not just the link*/
+		display: block; 
+		
+		/* Removes the default underline on links */
+		text-decoration:none; 
+		color: #eee;
+		
+		/* Sets top&bottom padding to 5 pixels */
+		padding:5px 0; 
+	}
+	
+	.menuList a:hover 
+	{
+		/*When the user hovers over the list the background changes to a lighter grey and the font changes to black*/
+		color:#000;
+		background:#CCC;
+	}
+	.current
+	{
+		background:#333;
+	}
+	
+/*Makes the font smaller the colour of the links black and alligns the bread crumbs to the left of the page*/	
+#breadCrumbs
+{
+	margin:0px auto 10px 50px;
+	font-size:9px;
+	text-align:left;
+	color:#000;
+}
+
+
+#breadCrumbs a:hover
+{
+	/*Changes the font colour to a light grey when hovered over*/
+	color:#00F;
+}
+
+	/*The folowing indents are all related to the content part of the page*/
+	#content
+	{
+		width:850px;
+		padding:10px;
+		border:5px solid #999;
+		margin:2% 5% 2% 5%;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:16px;
+		padding-bottom:0px;
+	}
+	
+	.com100-Pic
+	{
+		/*In some of the pages that have an image it was nesissary that the image was to the left
+		and the text was wrapped around it to allow more information to be put on the page*/
+		float:left;
+		border:1px solid #000;
+	}
+	
+	/*This is for the profile image in the About me page so it floats to the right and the table wraps 
+	around it*/
+	.profilePic
+	{
+		float:right;
+	}
+			/*All of ths formatting is for the table in the About me page so it wraps around the image correctly*/
+			th
+			{
+				background:#999;
+				font-weight:normal;							
+			}
+			td.left
+			{
+				width:20%
+			}
+			td.details
+			{
+				width:100%;
+			}
+			th.tblHead
+			{
+				/*Makes the headder row have a grey background*/
+				text-align:left;
+				width:870px;
+			}
+			td.personalLeft
+			{
+				width:15%;
+			}
+			td.personalDetails
+			{
+				width:85%;
+			}
+			ul.Qualifications
+			{
+				margin-top:0px;
+	
+			}
+			td.design
+			{
+				width:50%;
+			}
+			.design
+			{
+				text-align:left;
+			}
+
+
+		
+	/*This is a class used to prevent floated picutes from moving everything to the left of them including the footer*/	
+	.clear
+	{
+		clear:both;
+	}
+	
+
+/*Changes the size, colour and position of the text in the footer so it does not stand out as much*/
+#footer
+{
+    width:870px;
+    padding:0px;
+    margin: 5%;
+    border:5px solid #999;
+    margin-top:0%;
+    font-family:Arial, Helvetica, sans-serif;
+	color:#A0A0A0;
+	clear:both;
+}
+
+/*Makes the W3 images smaller and with no border so they do not stand out as much*/
+.w3Valid
+{
+	border:0px;
+	width:40px;
+	height:15px;
+}
+
+/*Sets the Accessibility link at the bottom of the page to a smaler font*/
+a.Accessible
+{
+	font-size:9px;
+}
+
+
+
+
