@@ -2,7 +2,7 @@
 /*
 The credentials for the logon
 */
-	$host = "tommos.co.uk";
-	$user = "tommos_2";
+	$host = "localhost";
+	$user = "tommos_aaron";
 	$password = "AaronSite123";
 ?>

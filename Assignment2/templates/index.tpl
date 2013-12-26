@@ -19,7 +19,7 @@
 				<a href="sales.php"> <img src="resources/logo.png" width="350" height="100" alt="Light Shop" title="Light Shop" /></a>
 			</div>
 			<div id="links">
-				<a href="../test.php" title="Tommos Home">Tommos Home</a>&nbsp;|&nbsp;<a href="sales.php" title="Home">Home</a>&nbsp;|&nbsp;<a href="admin.php" title="Admin">Admin</a><br/>
+				<a href="../index.php" title="Tommos Home">Tommos Home</a>&nbsp;|&nbsp;<a href="sales.php" title="Home">Home</a>&nbsp;|&nbsp;<a href="admin.php" title="Admin">Admin</a><br/>
 			</div>
 			<div id="search">
 				<form action="sales.php?search=Search">
