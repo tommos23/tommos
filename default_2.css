@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	background-image:url("IndexImg/pussyback.jpg");
+}
+
+
+#banner
+{
+	/*Sets a fixed width and height for the banner so it cannot change depending on the content in it*/
+    width:100%;
+	height:200px;
+}
+
+	/*The folowing indents are all related to the content part of the page*/
+	#content
+	{
+		width:100%;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:16px;
+		padding-bottom:0px;
+		
+	}
+
+
+#wrapper
+{
+	clear:both;
+	background:#FFF;
+	
+	/*Sets a fixed width wrapper so it cannot be compressed as not to mess up the allignments*/
+    width:970px;
+	
+	/*Sets the margin on the outside of the wrapper to 0px and auto so it stays in the centre even if the 
+	wiidow is resized untill it reaches 970px across*/
+    margin:0px auto;
+    margin-top:0px 
+	
+	/*This alligns all of the text in the page to be centered unless otherwise defined*/
+	text-align: center;
+}
+
+#menuContainer
+{
+		/*Sets a fixed width and height for the banner so it cannot change depending on the content in it*/
+		width:100%;
+		height:28px;
+		
+		/*Takes away all padding so no white space is left in the box*/
+		padding:0;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:16px;
+		background:#FFF;
+		
+		/*If the box is box is filled like it is with the about my course and the How I Made The Website pages
+		the contents is hidden this stops the other indented un-ordered lines from appearing which would make them 
+		appearing in a way that would be unhelpfull for the user. This also allows the other style sheet to function 
+		correctly as the menu in the other style sheet is vertical*/
+		overflow: hidden;
+}
+.menuList 
+	{
+		/*This stops the points showing in the list*/
+		list-style-type: none;
+		
+		/*This makes the list appear horizontally*/
+		display: inline;
+		margin: 0px;
+		padding: 0px;
+	}
+	
+.menuList li 
+	{
+		width: 241px;
+		height: 28px;
+		float: left;
+		background:#333;
+		color:#FFF;
+		text-align:center;
+		/* Shows thin grey line to seperate list items */
+		border-right:1px solid #000; 
+	}
+	
+	.menuList a 
+	{
+		/* This ensures that the whole element is clickable, not just the link*/
+		display: block; 
+		
+		/* Removes the default underline on links */
+		text-decoration:none; 
+		color: #FFF;
+		
+		/* Sets top&bottom padding to 5 pixels */
+		padding:5px 0; 
+	}
+	
+	.menuList a:hover 
+	{
+		/*When the user hovers over the list the background changes to a lighter grey and the font changes to black*/
+		color:#000;
+		background:#CCC;
+	}
+#footer
+{
+	border-top:solid 1px #000;
+	text-align:center;
+}
+/*Makes the W3 images smaller and with no border so they do not stand out as much*/
+.w3Valid
+{
+	border:0px;
+	width:40px;
+	height:15px;
+}
+
+/*Sets the Accessibility link at the bottom of the page to a smaler font*/
+a.Accessible
+{
+	font-size:9px;
+}
