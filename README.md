@@ -1,3 +1,3 @@
 tommos
 ======
-tommos.co.uk woking git repositry
+Personal PHP website and testing area
