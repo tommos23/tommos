@@ -1,43 +1,84 @@
 # GitHub Copilot Instructions for tommos.co.uk
 
 ## Project Overview
-This is a personal website and testing area for tommos.co.uk. It's a simple static website with a "Coming Soon" landing page.
+This is a personal blog built with Hugo, a fast and modern static site generator. The site is deployed on Cloudflare Pages and features blog posts about technology, coding, and development.
 
 ## Project Structure
-- `index.html` - Main landing page
-- `styles.css` - CSS styles with gradient background and responsive design
-- `README.md` - Project documentation
-- Favicon and icon files (`.ico`, `.svg`, `.png`, etc.)
-- `site.webmanifest` - Web app manifest for PWA features
+```
+tommos/
+├── archetypes/       # Content templates for new posts
+├── content/          # Blog content (Markdown files)
+│   ├── _index.md    # Homepage content
+│   └── posts/       # Blog posts directory
+├── static/          # Static assets (favicons, images, CSS, JS)
+├── themes/          # Hugo themes (PaperMod theme as git submodule)
+├── legacy/          # Legacy static site files (for reference)
+├── hugo.toml        # Hugo site configuration
+├── .gitignore       # Git ignore patterns
+├── .gitmodules      # Git submodules configuration
+└── README.md        # Project documentation
+```
 
 ## Technologies Used
-- HTML5
-- CSS3
-- Static site (no build process or dependencies)
+- **Hugo** (v0.146.0 or later) - Static site generator
+- **PaperMod Theme** - Hugo theme with dark mode support
+- **Markdown** - Content format
+- **TOML** - Configuration format
+- **Git submodules** - For theme management
+- **Cloudflare Pages** - Deployment platform
+
+## Hugo Commands
+- `hugo server -D` - Start development server with drafts
+- `hugo new posts/post-name.md` - Create new blog post
+- `hugo --minify` - Build for production
+- `git submodule update --init --recursive` - Initialize theme submodules
 
 ## Code Style Guidelines
-- Use semantic HTML5 elements
-- Keep CSS organized and minimal
-- Use modern CSS features (flexbox, CSS variables, etc.)
-- Maintain accessibility standards
-- Use meaningful class names with lowercase and hyphens (e.g., `.copyright`)
-- Keep indentation consistent (4 spaces for HTML, CSS)
+- Use Markdown for all content files
+- Follow Hugo's front matter format (YAML or TOML)
+- Keep indentation consistent (2 spaces for YAML/TOML)
+- Use meaningful file names in kebab-case (e.g., `my-blog-post.md`)
+- Include proper front matter in all content files (title, date, draft, tags, categories)
+- Write descriptive commit messages
+
+## Content Guidelines
+- Blog posts go in `content/posts/`
+- Set `draft: false` when ready to publish
+- Use appropriate tags and categories
+- Include code blocks with language specification for syntax highlighting
+- Optimize images before adding to `static/` directory
+- Use relative links for internal content
 
 ## Development Workflow
-- This is a static site with no build process
-- Changes can be tested by opening `index.html` directly in a browser
-- No package manager or dependencies required
+1. Clone repository with submodules: `git clone --recurse-submodules`
+2. Or initialize submodules: `git submodule update --init --recursive`
+3. Run development server: `hugo server -D`
+4. Create new posts: `hugo new posts/post-name.md`
+5. Edit content in `content/posts/`
+6. Test locally at `http://localhost:1313/`
+7. Build for production: `hugo --minify`
+8. Generated site outputs to `public/` directory (gitignored)
 
-## Design Principles
-- Clean, minimalist design
-- Responsive layout that works on all devices
-- Use gradient backgrounds for visual appeal
-- Maintain professional appearance with good typography
-- Ensure copyright notice is always visible in footer
+## Theme Configuration
+- Theme: PaperMod (https://github.com/adityatelange/hugo-PaperMod)
+- Configured in `hugo.toml`
+- Features: Dark mode, TOC, code copy buttons, reading time, share buttons
+- Customization through `[params]` section in `hugo.toml`
+
+## Deployment
+- Platform: Cloudflare Pages
+- Build command: `hugo --minify`
+- Build output directory: `public`
+- Environment variable required: `HUGO_VERSION=0.146.0` (or later)
 
 ## Best Practices
-- Keep HTML structure simple and semantic
-- Use external CSS file for styling (avoid inline styles)
-- Optimize images and icons for web
-- Ensure proper meta tags for SEO and mobile devices
-- Test on multiple browsers and screen sizes
+- Keep Hugo version specified in documentation
+- Test posts locally before committing
+- Use Hugo's built-in shortcodes when appropriate
+- Maintain consistent front matter across posts
+- Keep theme as git submodule (don't modify directly)
+- Use `hugo --minify` for production builds
+- Ensure all posts have proper metadata (title, date, tags)
+- Use descriptive slugs for URLs
+- Optimize images and assets before adding them
+- Follow the PaperMod theme documentation for advanced features
