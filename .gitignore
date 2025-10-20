@@ -3,6 +3,10 @@
 /resources/_gen/
 /.hugo_build.lock
 
+# Hugo binaries
+hugo_extended_*.tar.gz
+hugo
+
 # OS
 .DS_Store
 Thumbs.db
