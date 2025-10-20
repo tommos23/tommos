@@ -1,0 +1,41 @@
+baseURL = "https://tommos.co.uk"
+languageCode = "en"
+title = "tommos.co.uk"
+theme = "PaperMod"
+copyright = "© tommos.co.uk 2025"
+
+[params]
+  description = "Personal blog by tommos"
+  author = "tommos"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  defaultTheme = "auto"
+  ShowToc = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+[params.homeInfoParams]
+  Title = "Welcome to tommos.co.uk"
+  Content = "A personal blog about technology, coding, and more."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/tommos23"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
