@@ -90,15 +90,38 @@ After building with `hugo --minify`, the contents of the `public/` directory can
 
 ```
 tommos/
+├── .github/
+│   └── workflows/    # CI/CD workflows
 ├── archetypes/       # Content templates
 ├── content/          # Blog posts and pages
 │   ├── _index.md    # Homepage content
 │   └── posts/       # Blog posts directory
+├── legacy/          # Legacy landing page (historical reference)
 ├── static/          # Static assets (favicons, images, etc.)
-├── themes/          # Hugo themes (PaperMod)
+│   └── .well-known/ # Security and meta files
+├── themes/          # Hugo themes (PaperMod as submodule)
 ├── hugo.toml        # Site configuration
 └── public/          # Generated site (not committed)
 ```
+
+## CI/CD & Quality Assurance
+
+This project includes automated workflows:
+
+- **Build Workflow**: Automatically builds the site on push to main and pull requests
+- **Link Checker**: Weekly checks for broken links and validates on content changes
+
+## SEO & Security
+
+The site includes:
+- `robots.txt` for search engine crawlers
+- `security.txt` for responsible disclosure
+- Enhanced meta tags and Open Graph support
+- Sitemap generation
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this project.
 
 ## Theme
 
@@ -111,4 +134,6 @@ This site uses the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) th
 
 ## License
 
-Content is © tommos.co.uk 2025. Theme is licensed under MIT.
+Code and configuration are licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Blog content in `content/` directory is © tommos.co.uk 2025. The PaperMod theme is licensed separately under MIT.
