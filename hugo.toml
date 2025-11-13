@@ -14,6 +14,16 @@ copyright = "© tommos.co.uk 2025"
   ShowCodeCopyButtons = true
   defaultTheme = "auto"
   ShowToc = true
+  
+  # SEO and Social Media
+  keywords = ["technology", "coding", "development", "programming", "blog"]
+  images = ["/web-app-manifest-512x512.png"]
+  
+  [params.profileMode]
+    enabled = false
+  
+  [params.cover]
+    linkFullImages = true
 
 [menu]
   [[menu.main]]
