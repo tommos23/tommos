@@ -1,0 +1,7 @@
+# Lychee configuration file
+# Accept 404 for missing favicon files that are theme defaults but not provided
+exclude = [
+    "https://tommos.co.uk/favicon-16x16.png",
+    "https://tommos.co.uk/favicon-32x32.png", 
+    "https://tommos.co.uk/safari-pinned-tab.svg"
+]
