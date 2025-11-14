@@ -19,9 +19,6 @@ copyright = "© tommos.co.uk 2025"
   keywords = ["technology", "coding", "development", "programming", "blog"]
   images = ["/web-app-manifest-512x512.png"]
   
-  [params.profileMode]
-    enabled = false
-  
   [params.cover]
     linkFullImages = true
 

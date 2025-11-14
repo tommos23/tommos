@@ -5,7 +5,6 @@ draft: true
 description: ""
 tags: []
 categories: []
-author: "tommos"
 ShowToc: true
 TocOpen: false
 cover:
