@@ -1,0 +1,4 @@
+Contact: https://github.com/tommos23
+Expires: 2026-11-30T23:59:59Z
+Preferred-Languages: en
+Canonical: https://tommos.co.uk/.well-known/security.txt
