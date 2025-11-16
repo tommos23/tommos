@@ -1,0 +1,43 @@
+{{- $img := .Page.Resources.GetMatch (.Get "src") -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $caption := .Get "caption" | default "" -}}
+
+{{- if $img -}}
+  {{- $tinyw := $img.Resize "320x webp" -}}
+  {{- $smallw := $img.Resize "640x webp" -}}
+  {{- $mediumw := $img.Resize "1024x webp" -}}
+  {{- $largew := $img.Resize "1600x webp" -}}
+  
+  {{- $tiny := $img.Resize "320x" -}}
+  {{- $small := $img.Resize "640x" -}}
+  {{- $medium := $img.Resize "1024x" -}}
+  {{- $large := $img.Resize "1600x" -}}
+
+  <figure>
+    <picture>
+      <source type="image/webp"
+              srcset="{{ $tinyw.RelPermalink }} 320w,
+                      {{ $smallw.RelPermalink }} 640w,
+                      {{ $mediumw.RelPermalink }} 1024w,
+                      {{ $largew.RelPermalink }} 1600w"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1024px">
+      <source type="{{ $img.MediaType }}"
+              srcset="{{ $tiny.RelPermalink }} 320w,
+                      {{ $small.RelPermalink }} 640w,
+                      {{ $medium.RelPermalink }} 1024w,
+                      {{ $large.RelPermalink }} 1600w"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1024px">
+      <img src="{{ $medium.RelPermalink }}" 
+           alt="{{ $alt }}"
+           width="{{ $medium.Width }}"
+           height="{{ $medium.Height }}"
+           loading="lazy"
+           decoding="async">
+    </picture>
+    {{- if $caption -}}
+      <figcaption>{{ $caption | markdownify }}</figcaption>
+    {{- end -}}
+  </figure>
+{{- else -}}
+  <p style="color: red;">Error: Image "{{ .Get "src" }}" not found in page bundle</p>
+{{- end -}}
