@@ -10,3 +10,8 @@ exclude = [
 exclude_path = [
     "^/assets/"
 ]
+
+# Check links in the built HTML files, not against the live site
+# This validates both internal structure and external links
+base = "public"
+skip_missing = false
