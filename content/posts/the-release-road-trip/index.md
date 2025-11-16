@@ -10,7 +10,7 @@ Understanding where your project is headed is key to building a product with pur
 
 Many inherited projects function fine but are far from impressive. I think of these as "rusty cars," that sit stagnant. Their releases take too long and the user experience they provide leaves much to be desired.
 
-![Rusty car sitting in a field](https://github.com/user-attachments/assets/936e68de-5b94-49f7-b265-a2002c278711)
+{{< img src="rusty-car.jpg" alt="Rusty car sitting in a field" >}}
 
 ## From 0 to 60
 
@@ -20,7 +20,7 @@ We start with building unit and UI tests, following the principles of the testin
 
 The goal is to automate as much as possible, from building to uploading, directly to the app store. This allows us to release features quickly, giving us more time to focus on enhancing the project's goals. It's not about making sweeping changes overnight but creating lasting value.
 
-![Modern hot rod with flame design](https://github.com/user-attachments/assets/5f91d99c-b8ea-4a7f-a770-b2281131e3aa)
+{{< img src="hot-rod.jpg" alt="Modern hot rod with flame design" >}}
 
 ## Your Roadmap and GPS
 
@@ -30,7 +30,7 @@ Analytics are the GPS for your project, providing answers to questions like: Whe
 
 In one use case, I worked on a sports betting app that was getting very few reviews, and most of the feedback we did receive was negative. We hypothesised that users enjoyed the app but weren't motivated to go out of their way to write a positive review. The introduction of in-app reviews made it easier for happy users to share their thoughts. As a result, positive reviews surged, unlocking a feedback loop that improved the app's rating and increased downloads.
 
-![GPS and analytics visualization with satellites](https://github.com/user-attachments/assets/d2b5a687-4637-4bc0-8e72-7f2957be91ba)
+{{< img src="gps-analytics.jpg" alt="GPS and analytics visualization with satellites" >}}
 
 ## Finding Traffic Jams With AI-enabled A/B Testing
 
