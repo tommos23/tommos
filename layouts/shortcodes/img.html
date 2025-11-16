@@ -3,15 +3,15 @@
 {{- $caption := .Get "caption" | default "" -}}
 
 {{- if $img -}}
-  {{- $tinyw := $img.Resize "320x webp" -}}
-  {{- $smallw := $img.Resize "640x webp" -}}
-  {{- $mediumw := $img.Resize "1024x webp" -}}
-  {{- $largew := $img.Resize "1600x webp" -}}
+  {{- $tinyw := $img.Fill "320x320 webp" -}}
+  {{- $smallw := $img.Fill "640x640 webp" -}}
+  {{- $mediumw := $img.Fill "1024x1024 webp" -}}
+  {{- $largew := $img.Fill "1600x1600 webp" -}}
   
-  {{- $tiny := $img.Resize "320x" -}}
-  {{- $small := $img.Resize "640x" -}}
-  {{- $medium := $img.Resize "1024x" -}}
-  {{- $large := $img.Resize "1600x" -}}
+  {{- $tiny := $img.Fill "320x320" -}}
+  {{- $small := $img.Fill "640x640" -}}
+  {{- $medium := $img.Fill "1024x1024" -}}
+  {{- $large := $img.Fill "1600x1600" -}}
 
   <figure>
     <picture>
