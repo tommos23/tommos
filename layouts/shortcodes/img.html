@@ -32,7 +32,8 @@
            width="{{ $medium.Width }}"
            height="{{ $medium.Height }}"
            loading="lazy"
-           decoding="async">
+           decoding="async"
+           style="width: 100%; height: auto; max-width: {{ $medium.Width }}px;">
     </picture>
     {{- if $caption -}}
       <figcaption>{{ $caption | markdownify }}</figcaption>
