@@ -5,3 +5,13 @@ exclude = [
     "https://tommos.co.uk/favicon-32x32.png", 
     "https://tommos.co.uk/safari-pinned-tab.svg"
 ]
+
+# Exclude Hugo-generated asset paths (fingerprinted CSS/JS files)
+exclude_path = [
+    "^/assets/"
+]
+
+# Check links in the built HTML files, not against the live site
+# This validates both internal structure and external links
+base = "public"
+skip_missing = false
