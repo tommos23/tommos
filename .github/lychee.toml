@@ -5,3 +5,8 @@ exclude = [
     "https://tommos.co.uk/favicon-32x32.png", 
     "https://tommos.co.uk/safari-pinned-tab.svg"
 ]
+
+# Exclude Hugo-generated asset paths (fingerprinted CSS/JS files)
+exclude_path = [
+    "^/assets/"
+]
