@@ -46,3 +46,7 @@ copyright = "© tommos.co.uk 2025"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+
+[minify]
+  disableXML = true
+  minifyOutput = true
